@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        ul.topnav {
+            list-style-type: none;
+
+        }
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.topnav li {
+            float: right;
+        }
+
+        ul.topnav img {
+            float: left;
+            padding-left: 300px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            ul.topnav li.right,
+            ul.topnav li,
+            ul.topnav img {
+                float: none;
+            }
+
+            ul.topnav img {
+                float: none;
+                padding: 0px;
+                width: 100%;
+                
+            }
+            .img{
+                display: none;
+            }
+            .main{
+                display: grid;
+                grid-template-columns: auto;
+                width: 100%;
+            }   
+            .first{
+                width: 100%;
+            }
+        }
+
+        .main{
+            width: 100%; 
+            display: grid; 
+            grid-template-columns: auto auto;
+        }
+         .img{
+            height: 500px; 
+            width: 500px; 
+            padding-top: 60px; 
+            padding-right: 190px;
+        }
+        .first{
+            width: 60%; color: white; padding-top: 150px; padding-left: 220px; font-size: 30px; float: right; 
+
+        }   
+    </style>
+</head>
+
+<body bgcolor="#26309B">
+    <div class="container">
+        <div style="height: 50px; background-color: #141C72; width: 100%;">
+            <ul class="topnav">
+                <img src="Capture.png" alt="">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#paes">Pages</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="first">
+                <h3>Invest in Crypto is an Easy Way to Trade Bitcoin</h3>
+                <h6 style="font-weight: normal; padding-top: 10px; font-size: 16px;">Bitcoin is peer-to-peer electronic
+                    money that features low fees and fast transaction times.</h6>
+                <button
+                    style="background-color: yellowgreen; height: 40px; width: 100px; border-radius: 20px; border: none;">Register
+                    Now</button>
+            </div>
+            <div class="img">
+                <img src="img.png">
+            </div>
+        </div>
+        <!--
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            wi dth: 100%;
+        }
+    </style>
+</head> 
+<body bgcolor="blue">   
+    <div class="container">
+        <div style="height: 50px; background-color: black;">
+        <div style="width: 50%;  float: left;">
+            <img src="Capture.png" alt="logo" style="padding-left: 300px;"> 
+        </div>
+        <div style=" padding:15px 20px; float: left;">
+            <a href="" style="padding-right: 10px; text-decoration: none;">Home</a>
+            <a href="" style="padding-right: 10px; text-decoration: none;">About Us</a>
+            <a href="" style="padding-right: 10px; text-decoration: none;">Features</a>
+            <a href="" style="padding-right: 10px; text-decoration: none;">Pages</a>
+            <a href="" style="padding-right: 10px; text-decoration: none;">Blog</a>
+            <a href="" style="padding-right: 10px; text-decoration: none; color: white;">Contact</a>
+        </div>
+    </div>
+    </div>
+    <div class="w3-container">
+    <p>Responsive navigation bar:</p>
+    <div class="w3-bar w3-black">
+      <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+    </div>
+</div>
+-->
+</body>
+
+</html>
