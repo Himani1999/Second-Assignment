@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Today</title>
     <style>
         body {
@@ -18,6 +19,7 @@
 
         .header {
             background-color: rgb(30, 30, 83);
+            padding: 10px 0px;
         }
 
         .container {
@@ -33,7 +35,7 @@
         }
 
         .text {
-            padding: 150px 20px;
+            padding: 130px 10px;
             color: white;
             font-weight: bold;
             font-size: 35px;
@@ -46,7 +48,11 @@
         }
 
         .img {
-            padding: 30px 5px;
+            padding: 40px 5px;
+        }
+
+        #img {
+            height: 480px;
         }
 
         .content1 {
@@ -69,32 +75,33 @@
             padding: 0px 345px;
             font-size: 15px;
             color: white;
-
+            margin-bottom: 20px;
         }
 
         .servicesContent {
             display: grid;
             grid-template-columns: 33.33% 33.33% 33.33%;
-            
+
         }
-        .main{
+
+        .main {
             margin-top: 20px;
         }
-        .main2{
+
+        .main2 {
             margin-bottom: 100px;
         }
+
         .notification {
-            border: 1px dotted red;
-            
             margin-top: 30px;
             margin-right: 15px;
+            padding-bottom: 50px;
             color: white;
             background-color: rgb(30, 30, 83);
         }
 
         .support {
-            border: 1px dotted yellow;
-            
+            padding-bottom: 50px;
             margin-top: 30px;
             margin-left: 15px;
             margin-right: 15px;
@@ -103,8 +110,7 @@
         }
 
         .ultimate {
-            border: 1px dotted pink;
-            
+            padding-bottom: 50px;
             margin-top: 30px;
             margin-left: 15px;
             color: white;
@@ -117,8 +123,9 @@
             font-weight: bold;
             color: white;
         }
-        #table{
-            padding-left: 30px; 
+
+        #table {
+            padding-left: 30px;
         }
 
         .image1 {
@@ -140,594 +147,760 @@
         .color {
             color: white;
         }
-        #not-ult{
+
+        #not-ult {
             padding: 10px 100px;
         }
-        #not-ult1{
-            padding: 5px 30px; 
-        }
-        #not-ult2{
+
+        #not-ult1 {
             padding: 5px 30px;
         }
-        #not-ult3{
+
+        #not-ult2 {
+            padding: 5px 30px;
+        }
+
+        #not-ult3 {
             padding: 5px 75px;
         }
-        #support{
+
+        #support {
             padding: 10px 90px;
         }
-        #support1{
+
+        #support1 {
             padding: 5px 30px;
         }
-        #support2{
+
+        #support2 {
             padding: 5px 20px;
         }
-        #support3{
+
+        #support3 {
             padding: 5px 65px;
         }
-        .roadmap{
-            margin: 20px 0px 20px 0px; 
-            padding: 10px 480px ; 
-            color: white; 
-            font-weight: bold; 
+
+        .roadmap {
+            margin: 20px 0px 20px 0px;
+            padding: 10px 480px;
+            color: white;
+            font-weight: bold;
             font-size: 20px;
         }
-        .Cprices{ 
-            margin-top: 60px; 
-            padding: 10px 450px ; 
-            color: white; 
-            font-weight: bold; 
+
+        .Cprices {
+            margin-top: 60px;
+            padding: 10px 450px;
+            color: white;
+            font-weight: bold;
             font-size: 20px;
         }
-        .maintable{
-            border: 1px dotted red; 
-            width: 100%; 
-            margin-top: 50px ;
-            margin-bottom: 100px; 
+
+        .maintable {
+            border: 1px dotted red;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 100px;
         }
-        .tabledata{
-            border: 1px solid yellow; 
-            display: grid; 
+
+        .tabledata {
+            border: 1px solid yellow;
+            display: grid;
             grid-template-columns: auto auto auto auto auto auto;
         }
-        #hi{
+
+        #hi {
             color: white;
         }
-        #hii{
+
+        #hii {
             color: white;
         }
-        #hiii{
+
+        #hiii {
             color: white;
         }
-        .team{
-            margin: 60px 0px 30px 0px; 
-            padding: 10px 450px ; 
-            color: white; 
-            font-weight: bold; 
+
+        .team {
+            margin: 60px 0px 30px 0px;
+            padding: 10px 450px;
+            color: white;
+            font-weight: bold;
             font-size: 20px;
         }
-        .line{
+
+        .line {
             margin: 20px 50px 0px -10px;
-            display: grid; 
+            display: grid;
             grid-template-columns: auto auto auto auto;
             width: 100%;
             padding: 50px 20px;
             border: 1px solid black;
         }
-        #inbus{
+
+        #inbus {
             font-size: 30px;
         }
-        #crypto{
-            font-size: 15px; 
-            font-weight: normal; 
+
+        #crypto {
+            font-size: 15px;
+            font-weight: normal;
             margin-top: 20px;
         }
-        #goods{
-            font-size: 15px; 
-            font-weight: normal; 
+
+        #goods {
+            font-size: 15px;
+            font-weight: normal;
             margin-top: 10px;
         }
-        #assets{
-            font-size: 13px; 
-            font-weight: normal; 
+
+        #assets {
+            font-size: 13px;
+            font-weight: normal;
             margin-top: 10px;
         }
-        .analytic{
-            border-radius: 20px; 
-            margin-top: 40px; 
-            height: 40px; 
-            width: 150px; 
+
+        .analytic {
+            border-radius: 20px;
+            margin-top: 40px;
+            height: 40px;
+            width: 150px;
             background: linear-gradient(to right, #ff3300 0%, #ffff00 100%);
         }
-        .app{
+
+        .app {
             font-size: 30px;
         }
-        .frequent{
-            padding: 10px 320px; 
-            font-weight: bold; 
-            font-size: 30px; 
-            margin-top: 50px; 
+
+        .frequent {
+            padding: 10px 320px;
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 50px;
             color: white;
         }
-        .q1{
-            float: left;  
-            border: 1px dotted yellow; 
+
+        .q1 {
+            float: left;
+            border: 1px dotted yellow;
             margin-top: 60px;
         }
-        .q2{
-            border: 1px dotted red; 
+
+        .q2 {
+            border: 1px dotted red;
             margin-top: 60px;
         }
-        .ford{
-            border: 1px solid yellow; 
-            display: grid; 
-            grid-template-columns: auto auto auto auto auto auto; 
+
+        .ford {
+            border: 1px solid yellow;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
             margin-top: 100px;
         }
-        .fordimg{
-            height: 100px; 
+
+        .fordimg {
+            height: 100px;
             width: 120px;
         }
-        .fordimg1{
-            height: 100px; 
-            width: 120px; 
+
+        .fordimg1 {
+            height: 100px;
+            width: 120px;
             padding-left: 50px;
         }
-        .last{
-            background-color: rgb(30, 30, 83); 
-            display: grid; 
-            grid-template-columns: 30% 20% 30% 20%; 
+
+        .last {
+            background-color: rgb(30, 30, 83);
+            display: grid;
+            grid-template-columns: 30% 20% 30% 20%;
             margin-top: 100px;
         }
-        #lastdiv1{
+
+        #lastdiv1 {
             border: 1px dotted yellow;
         }
-        #lastdiv2{
+
+        #lastdiv2 {
             border: 1px dotted red;
         }
-        #lastdiv3{
+
+        #lastdiv3 {
             border: 1px dotted violet;
-        } 
-        #lastdiv4{
+        }
+
+        #lastdiv4 {
             border: 1px dotted black;
         }
-        .hr{
+
+        .hr {
             margin: 20px 0px;
-            height:2px;
-            border-width:0;
-            background-color:whitesmoke;
+            height: 2px;
+            border-width: 0;
+            background-color: whitesmoke;
         }
-        .lasttext{
-            margin: 30px 550px; 
+
+        .lasttext {
+            margin: 30px 550px;
             color: white;
         }
-        
-.timeline {
-  padding: 30px 0 10px 0;
-  position: relative;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  width: 100%; 
-}
-.entry {
-  vertical-align: top;
-  color: #fff; 
-  font-size: 12px;
-  text-align: center;
-  position: relative;
-}
 
-.entry:after {
-  content: '';
-  background: #eee;
-  width: 7px;
-  height: 7px;
-  border-radius: 6px;
-  border: 3px solid orange;
-  position: absolute;
-  left: 50%;
-  top: -30px;
-  margin-left: -6px;
-}
+        .timeline {
+            padding: 30px 0 10px 0;
+            position: relative;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            width: 100%;
+        }
 
-.entry:before {
-  content: '';
-  background: #06182E;
-  width: 5px;
-  height: 20px;
-  position: absolute;
-  left: 50%;
-  top: -20px;
-  margin-left: -2px;
-}
+        .entry {
+            vertical-align: top;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            position: relative;
+        }
 
-.entry h1 {
+        .entry:after {
+            content: '';
+            background: #eee;
+            width: 7px;
+            height: 7px;
+            border-radius: 6px;
+            border: 3px solid orange;
+            position: absolute;
+            left: 50%;
+            top: -30px;
+            margin-left: -6px;
+        }
 
-  font-size: 18px;
-  font-family: Georgia, serif;
-  font-weight: bold;
-  margin-bottom: 10px;
-  
-}
+        .entry:before {
+            content: '';
+            background: #06182E;
+            width: 5px;
+            height: 20px;
+            position: absolute;
+            left: 50%;
+            top: -20px;
+            margin-left: -2px;
+        }
 
-.entry h2 {
-  letter-spacing: .2em;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
+        .entry h1 {
 
-.bar {
-  height: 4px;
-  background: #eee;
-  width: 85%;
-  position: relative;
-  top: 13px;
-  left: 8.5%;
-  
-}
-#imagew1{width: 95%; height: 200px;}
-#imagem1{width: 95%; height: 200px;}
-#imagew2{width: 95%; height: 200px;}
-#imagem2{
-    width: 100%; height: 200px;
-}
-#road{background-color: white; color: black; }
-#now{
-     background: linear-gradient(to right, #ff3300 0%, #ffff00 100%); 
-    margin-top: -10px; 
-    font-size: 20px; 
-}
+            font-size: 18px;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            margin-bottom: 10px;
 
+        }
 
+        .entry h2 {
+            letter-spacing: .2em;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
 
-        @media only screen and (max-width: 420px){
+        .bar {
+            height: 4px;
+            background: #eee;
+            width: 85%;
+            position: relative;
+            top: 13px;
+            left: 8.5%;
+
+        }
+
+        #imagew1 {
+            width: 95%;
+            height: 200px;
+        }
+
+        #imagem1 {
+            width: 95%;
+            height: 200px;
+        }
+
+        #imagew2 {
+            width: 95%;
+            height: 200px;
+        }
+
+        #imagem2 {
+            width: 100%;
+            height: 200px;
+        }
+
+        #road {
+            background-color: white;
+            color: black;
+        }
+
+        #now {
+            background: linear-gradient(to right, #ff3300 0%, #ffff00 100%);
+            margin-top: -10px;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(30, 30, 83);
+            height: 50px;
+            margin-right: 100px;
+
+        }
+
+        li {
+            float: right;
+            padding-right: 30px;
+            padding-top: 5px;
+            font-size: 20px;
             
-            .container{
+        }
+
+        li a {
+            display: block;
+            padding: 8px;
+            color: white;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: gray;
+        }
+
+        #logo {
+            float: left;
+            margin-left: 150px;
+
+        }
+
+        .icon {
+            margin-left: 160px;
+            margin-top: 20px;
+        }
+
+
+
+        @media only screen and (max-width: 420px) {
+            .container {
                 width: 100%;
+
             }
-            .header{
-                background-color: rgb(30, 30, 83) ;
+
+            .header {
+                width: 100%;
+                background-color: rgb(30, 30, 83);
             }
-            .img{
+
+            .img {
                 display: none;
             }
-            .text{
+
+            .text {
                 padding: 50px 20px;
                 font-size: 30px;
             }
+
             .first {
-            display: grid;
-            grid-template-columns:auto;
+                display: grid;
+                grid-template-columns: auto;
             }
+
             .content1 {
-            padding: 10px 100px;
-            font-weight: bold;
-            font-size: 20px;
-            margin-top: 50px;
-            color: white;
+                padding: 10px 100px;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 50px;
+                color: white;
             }
+
             .content2 {
-            padding: 0px 20px;
-            font-size: 12px;
-            margin-top: 30px;
-            color: white;
+                padding: 0px 20px;
+                font-size: 12px;
+                margin-top: 30px;
+                color: white;
             }
+
             .content3 {
-            padding: 0px 20px;
-            font-size: 13px;
-            color: white;
+                padding: 0px 20px;
+                font-size: 13px;
+                color: white;
             }
+
             .servicesContent {
-            display: grid;
-            grid-template-columns: 90%;
-            
+                display: grid;
+                grid-template-columns: 90%;
+
             }
+
             .notification {
-            border: 1px dotted red;
-            margin: 40px 0px 10px 35px;
-            color: white;
-            background-color: rgb(30, 30, 83);
+                border: 1px dotted red;
+                margin: 40px 0px 10px 35px;
+                color: white;
+                background-color: rgb(30, 30, 83);
             }
+
             .support {
-            border: 1px dotted yellow;
-            margin: 40px 0px 10px 35px;
-            color: white;
-            background-color: rgb(30, 30, 83);
+                border: 1px dotted yellow;
+                margin: 40px 0px 10px 35px;
+                color: white;
+                background-color: rgb(30, 30, 83);
             }
+
             .ultimate {
-            border: 1px dotted pink;
-            margin: 40px 0px 10px 35px;
-            color: white;
-            background-color: rgb(30, 30, 83);
+                border: 1px dotted pink;
+                margin: 40px 0px 10px 35px;
+                color: white;
+                background-color: rgb(30, 30, 83);
             }
-            #not-ult{
+
+            #not-ult {
                 padding: 10px 80px;
             }
-            #not-ult1{
-                padding: 5px 10px; 
-            }
-            #not-ult2{
-                padding: 5px 5px;
-            }
-            #not-ult3{
-                padding: 5px 40px;
-            }
-            #support{
-                padding: 10px 70px;
-            }
-            #support1{
+
+            #not-ult1 {
                 padding: 5px 10px;
             }
-            #support2{
+
+            #not-ult2 {
                 padding: 5px 5px;
             }
-            #support3{
+
+            #not-ult3 {
+                padding: 5px 40px;
+            }
+
+            #support {
+                padding: 10px 70px;
+            }
+
+            #support1 {
+                padding: 5px 10px;
+            }
+
+            #support2 {
+                padding: 5px 5px;
+            }
+
+            #support3 {
                 padding: 5px 35px;
-           }
-        
-            .Cprices{ 
-                width: 100%; 
-                padding: 10px 100px ; 
+            }
+
+            .Cprices {
+                width: 100%;
+                padding: 10px 100px;
                 font-size: 20px;
             }
-            .maintable{
-                border: 1px dotted red; 
-                width: 100%; 
-                margin: 50px 20px; 
+
+            .maintable {
+                border: 1px dotted red;
+                width: 100%;
+                margin: 50px 20px;
             }
-            .tabledata{
-                border: 1px solid yellow; 
-                display: grid; 
+
+            .tabledata {
+                border: 1px solid yellow;
+                display: grid;
                 grid-template-columns: auto auto auto;
             }
-            #hi{
+
+            #hi {
                 display: none;
             }
-            #hii{
+
+            #hii {
                 display: none;
             }
-            #hiii{
+
+            #hiii {
                 display: none;
             }
-            .team{
-                margin: 60px 0px 30px 0px; 
-                padding: 10px 100px ; 
-                color: white; 
-                font-weight: bold; 
+
+            .team {
+                margin: 60px 0px 30px 0px;
+                padding: 10px 100px;
+                color: white;
+                font-weight: bold;
                 font-size: 30px;
             }
-            .line{
-            margin: 30px 0px 30px 0px; 
-            display: grid; 
-            grid-template-columns: auto;
-            padding: 0;
-        }
-        #imagem2{
-            width: 95%;
-        }
-        #inbus{
-            font-size: 25px;
-        }
-        .first {
-            display: grid;
-            grid-template-columns: auto;
-        }
-        #crypto{
-            font-size: 15px; 
-            font-weight: normal; 
-            margin-top: 20px;
-        }
-        #goods{
-            font-size: 15px; 
-            font-weight: normal; 
-            margin-top: 10px;
-        }
-        #assets{
-            font-size: 15px; 
-            font-weight: normal; 
-            margin-top: 10px;
-        }
-        .analytic{
-            border-radius: 20px; 
-            margin-top: 40px; 
-            height: 40px; 
-            width: 150px; 
-            background: linear-gradient(to right, #ff3300 0%, #ffff00 100%);
-        }
-        .image2 {
-            border: 1px dotted violet;
-            width: 300px;
-            height: 380px;
-            margin: 0px 40px 30px 30px;
-        }
-        .text1 {
-            padding: 50px 20px;
-            font-weight: bold;
-            color: white;
-        }
-        .image3 {
-            border: 1px solid red;
-            margin-left: 30px;
-        }
-        .frequent{
-            padding: 15px 30px;  
-            font-size: 35px; 
-            margin-top: 50px; 
-        }
-        .q1{
-            float: left;  
-            border: 1px dotted yellow; 
-            margin: 50px 20px;
-        }
-        .q2{
-            border: 1px dotted red;
-            margin: 0px 20px;
-        }
-        .ford{
-            border: 1px solid yellow; 
-            display: grid; 
-            grid-template-columns: auto; 
-            margin-top: 100px;
-        }
-        .fordimg{
-            display: none;
-        }
-        .fordimg1{
-            height: 200px; width: 200px; margin: 30px 20px;
-        }
-        .last{
-            background-color:rgb(30, 30, 83); 
-            display: grid; 
-            grid-template-columns: auto; 
-            margin: 100px 20px;
-        }
-        #lastdiv1{
-            border: 1px dotted yellow;
-        }
-        #lastdiv2{
-            border: 1px dotted red;
-            margin: 30px 0px;
-        }
-        #lastdiv3{
-            border: 1px dotted violet;
-        } 
-        #lastdiv4{
-            border: 1px dotted black;
-            margin: 30px 0px;
-        }
-        .hr{
-            margin-top: 30px ;
-        }
-        .lasttext{
-            margin: 30px 0px; 
-            color: white;
-        }
-        .line{
-            display: grid;
-            grid-template-columns: auto;
-            width: 100%;
-            margin: 20px 10px 20px 10px;
-        }
-        .roadmap{
+
+            .line {
+                margin: 30px 0px 30px 0px;
+                display: grid;
+                grid-template-columns: auto;
+                padding: 0;
+            }
+
+            #imagem2 {
+                width: 95%;
+            }
+
+            #inbus {
+                font-size: 25px;
+            }
+
+            .first {
+                display: grid;
+                grid-template-columns: auto;
+            }
+
+            #crypto {
+                font-size: 15px;
+                font-weight: normal;
+                margin-top: 20px;
+            }
+
+            #goods {
+                font-size: 15px;
+                font-weight: normal;
+                margin-top: 10px;
+            }
+
+            #assets {
+                font-size: 15px;
+                font-weight: normal;
+                margin-top: 10px;
+            }
+
+            .analytic {
+                border-radius: 20px;
+                margin-top: 40px;
+                height: 40px;
+                width: 150px;
+                background: linear-gradient(to right, #ff3300 0%, #ffff00 100%);
+            }
+
+            .image2 {
+                border: 1px dotted violet;
+                width: 300px;
+                height: 380px;
+                margin: 0px 40px 30px 30px;
+            }
+
+            .text1 {
+                padding: 50px 20px;
+                font-weight: bold;
+                color: white;
+            }
+
+            .image3 {
+                border: 1px solid red;
+                margin-left: 30px;
+            }
+
+            .frequent {
+                padding: 15px 30px;
+                font-size: 35px;
+                margin-top: 50px;
+            }
+
+            .q1 {
+                float: left;
+                border: 1px dotted yellow;
+                margin: 50px 20px;
+            }
+
+            .q2 {
+                border: 1px dotted red;
+                margin: 0px 20px;
+            }
+
+            .ford {
+                border: none;
+                display: grid;
+                grid-template-columns: auto;
+                margin-top: 100px;
+            }
+
+            .fordimg {
+                display: none;
+            }
+
+            .fordimg1 {
+                height: 200px;
+                width: 250px;
+                margin: 20px 10px;
+            }
+
+            .last {
+                background-color: rgb(30, 30, 83);
+                display: grid;
+                grid-template-columns: auto;
+                margin: 100px 20px;
+            }
+
+            #lastdiv1 {
+                border: 1px dotted yellow;
+            }
+
+            #lastdiv2 {
+                border: 1px dotted red;
+                margin: 30px 0px;
+            }
+
+            #lastdiv3 {
+                border: 1px dotted violet;
+            }
+
+            #lastdiv4 {
+                border: 1px dotted black;
+                margin: 30px 0px;
+            }
+
+            .hr {
+                margin-top: 30px;
+            }
+
+            .lasttext {
+                margin: 30px 0px;
+                color: white;
+            }
+
+            .line {
+                display: grid;
+                grid-template-columns: auto;
                 width: 100%;
-                padding: 30px 130px ;  
+                margin: 20px 10px 20px 10px;
+                border: none;
+            }
+
+            .roadmap {
+                width: 100%;
+                padding: 30px 130px;
                 font-size: 20px;
             }
-        .bar{
-            display: none;
-        }
-        .entry::before{
-            display: none;
-        }
-        .timeline {
- 
- padding:0;
- display: grid;
- grid-template-columns: auto ;
- width: 100%;
-        }
-        .entry:after {
-  margin-top: 90px;
-  border: 3px solid orange;
-}
-.entry h1 {
 
-font-size: 18px;
-font-family: Georgia, serif;
-font-weight: bold;
-margin-top: 90px;
-}
-.entry {
-  vertical-align: top; 
-  font-size: 12px;
-  text-align: center;
-  position: relative;
-  
-}
+            .bar {
+                display: none;
+            }
 
-#road{background-color: white; color: black; height: 80px; width: 200px; margin-left: 80px;}
-#now{
-     background: linear-gradient(to right, #ff3300 0%, #ffff00 100%); 
-    margin-top: -10px; 
-    font-size: 20px; 
-}
+            .entry:before {
+                display: none;
+            }
 
+            .timeline {
+
+                padding: 0;
+                display: grid;
+                grid-template-columns: auto;
+                width: 100%;
+            }
+
+            .entry:after {
+                margin-top: 90px;
+                border: 3px solid orange;
+            }
+
+            .entry h1 {
+
+                font-size: 18px;
+                font-family: Georgia, serif;
+                font-weight: bold;
+                margin-top: 90px;
+            }
+
+            .entry {
+                vertical-align: top;
+                font-size: 12px;
+                text-align: center;
+                position: relative;
+
+            }
+
+            #road {
+                background-color: white;
+                color: black;
+                height: 80px;
+                width: 200px;
+                margin-left: 80px;
+            }
+
+            #now {
+                background: linear-gradient(to right, #ff3300 0%, #ffff00 100%);
+                margin-top: -10px;
+                font-size: 20px;
+            }
+
+            #logo {
+                float: left;
+                margin-left: 100px;
+            }
+
+            li a {
+                display: none;
+            }
+
+            .icon {
+                margin-left: 135px;
+                margin-top: 20px;
+            }
+            li a{
+                display: none;
+            }
         }
-
     </style>
 </head>
-
 <body>
     <div class="mainContainer">
         <div class="header">
-            <div class="container">
-                <img src="logo-light.png" alt="">
-            </div>
-        </div>
+            <ul>
+                <li id="logo"> <img src="logo-light.png" alt=""></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#home">Home</a></li>
+            </ul>
 
-        <div class="container">
-            <div class="first">
-                <div class="text">
-                    <div>Invest in Crypto is an Easy Way to Trade Bitcoin</div>
-                    <div style="font-size: 17px; font-weight: normal; margin-top: 20px;">Bitcoin is peer-to-peer
-                        electronic money that features low fees and fast transaction times.</div>
-                    <div><button
-                            style="border-radius: 20px; height: 40px; width: 150px; background: linear-gradient(to right, #ff3300 0%, #ffff00 100%);">Register
-                            Now</button></div>
-                </div>
-                <div class="img">
-                    <img src="img.png" alt="image">
-                </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="first">
+            <div class="text">
+                <div>Invest in Crypto is an Easy Way to Trade Bitcoin</div>
+                <div style="font-size: 18px; font-weight: normal; margin-top: 30px;">Bitcoin is peer-to-peer
+                    electronic money that features low fees and fast transaction times.</div>
+                <div><button
+                        style="border-radius: 20px; height: 40px; width: 150px; background: linear-gradient(to right, #ff3300 0%, #ffff00 100%); margin-top: 50px;">Register
+                        Now</button></div>
+            </div>
+            <div class="img">
+                <img src="img.png" alt="image" id="img">
             </div>
         </div>
-        <div class="maincontainer">
-            <hr class="hr">
+    </div>
+    <div class="maincontainer">
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div>
+            <div class="content1">OUR SERVICES</div>
+            <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
+            <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
         </div>
-        <div class="container">
-            <div>
-                <div class="content1">OUR SERVICES</div>
-                <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
-                <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="main">
+    </div>
+    <div class="container">
+        <div class="main">
             <div class="servicesContent">
                 <div class="notification">
+                    <div class="icon"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
                     <div id="not-ult"> Fast Notifications </div>
                     <div id="not-ult1">your wallet must be secured. Bitcoin</div>
                     <div id="not-ult2"> makes it possible to transfer value any</div>
                     <div id="not-ult3"> where in a very easy way.</div>
                 </div>
                 <div class="support">
+                    <div class="icon"><i class="fa fa-file-text" aria-hidden="true"></i></div>
                     <div id="support">Browsers Support</div>
                     <div id="support1">your wallet must be secured. Bitcoin</div>
                     <div id="support2">makes it possible to transfer value any</div>
                     <div id="support3">where in a very easy way.</div>
                 </div>
                 <div class="ultimate">
-                    <div id="not-ult">Ultimate Settings</div>
-                    <div id="not-ult1">your wallet must be secured. Bitcoin</div>
-                    <div id="not-ult2">makes it possible to transfer value any</div>
-                    <div id="not-ult3">where in a very easy way.</div>
-                </div>
-            </div>
-</div>        </div>
-        <div class="container">
-      <div class="main2">
-                <div class="servicesContent">
-                <div class="notification">
-                    <div id="not-ult"> Fast Notifications </div>
-                    <div id="not-ult1">your wallet must be secured. Bitcoin</div>
-                    <div id="not-ult2"> makes it possible to transfer value any</div>
-                    <div id="not-ult3"> where in a very easy way.</div>
-                </div>
-                <div class="support">
-                    <div id="support">Browsers Support</div>
-                    <div id="support1">your wallet must be secured. Bitcoin</div>
-                    <div id="support2">makes it possible to transfer value any</div>
-                    <div id="support3">where in a very easy way.</div>
-                </div>
-                <div class="ultimate">
+                    <div class="icon"><i class="fa fa-sliders" aria-hidden="true"></i></div>
                     <div id="not-ult">Ultimate Settings</div>
                     <div id="not-ult1">your wallet must be secured. Bitcoin</div>
                     <div id="not-ult2">makes it possible to transfer value any</div>
@@ -735,273 +908,300 @@ margin-top: 90px;
                 </div>
             </div>
         </div>
-        </div>
-        <div class="maincontainer">
-            <hr class="hr">
-        </div>
-        <div class="container">
-            <div
-                class="roadmap">
-                Road Map</div>
-        
-        </div>
-        <div class="container">
-            
-    <div class="bar"></div>
-    <div class="timeline">
-        <div class="entry" style="border: none;  color: black;">
-            <h1 style="color: black;">September 2019</h1>
-            <h5 style="color: black;">Siant Platform idea</h5>
-          </div>
-          <div class="entry" style="border: none; color: black;">
-            <h1 style="color: black;">December 2019</h1>
-            <h5 style="color: black;">Siant Platform idea</h5>
-          </div>
-      
-          <div class="entry">
-              <div id="road">
-            <h1>January 2020</h1>
-            <h2>Siant Platform idea</h2>
-            <hr>
-            <div id="now">Now</div>
-          </div></div>
-      <div class="entry" style="border: none;  color: black;">
-        <h1 style="color: black;">February 2020</h1>
-        <h5 style="color: black;">Siant Platform idea</h5>
-      </div>
-      <div class="entry" style="border: none; color: black;">
-        <h1 style="color: black;">March 2019</h1>
-        <h5 style="color: black;">Siant Platform idea</h5>
-      </div>
-      <div class="entry" style="border: none; color: black;">
-        <h1 style="color: black;">April 2020</h1>
-        <h5 style="color: black;">Siant Platform idea</h5>
-      </div>
-    
     </div>
-    
-    
-        </div>
-        <div class="maincontainer">
-            <hr class="hr">
-        </div>
-        <div class="container">
-            <div
-                class="Cprices">
-                Currency Prices</div>
-            <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
-            <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
-        </div>
-        <div class="container">
-            <div class="maintable">
-                <div class="tabledata">
-                    <div id="table" class="table">Name</div>
-                    <div class="table" >Market Cap</div>
-                    <div class="table" >Price</div>
-                    <div class="table" id="hi">Circulating Supply</div>
-                    <div class="table" id="hi">Volume (24h)</div>
-                    <div class="table" id="hi">24% Change</div>
+    <div class="container">
+        <div class="main2">
+            <div class="servicesContent">
+                <div class="notification">
+                    <div class="icon"><i class="fa fa-list-alt" aria-hidden="true"></i></div>
+                    <div id="not-ult"> Fast Notifications </div>
+                    <div id="not-ult1">your wallet must be secured. Bitcoin</div>
+                    <div id="not-ult2"> makes it possible to transfer value any</div>
+                    <div id="not-ult3"> where in a very easy way.</div>
                 </div>
-                <div class="tabledata">
-                    <div style="padding-left: 30px; " class="table">Name</div>
-                    <div class="table">Market Cap</div>
-                    <div class="table">Price</div>
-                    <div class="table" id="hi">Circulating Supply</div>
-                    <div class="table" id="hi">Volume (24h)</div>
-                    <div class="table" id="hi">24% Change</div>
+                <div class="support">
+                    <div class="icon"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+                    <div id="support">Browsers Support</div>
+                    <div id="support1">your wallet must be secured. Bitcoin</div>
+                    <div id="support2">makes it possible to transfer value any</div>
+                    <div id="support3">where in a very easy way.</div>
                 </div>
-                <div class="tabledata">
-                    <div style="padding-left: 30px; " class="table">Name</div>
-                    <div class="table">Market Cap</div>
-                    <div class="table">Price</div>
-                    <div class="table" id="hi">Circulating Supply</div>
-                    <div class="table" id="hi">Volume (24h)</div>
-                    <div class="table" id="hi">24% Change</div>
-                </div>
-                <div class="tabledata">
-                    <div style="padding-left: 30px; " class="table">Name</div>
-                    <div class="table">Market Cap</div>
-                    <div class="table">Price</div>
-                    <div class="table" id="hi">Circulating Supply</div>
-                    <div class="table" id="hi">Volume (24h)</div>
-                    <div class="table" id="hi">24% Change</div>
-                </div>
-                <div class="tabledata">
-                    <div style="padding-left: 30px; " class="table">Name</div>
-                    <div class="table">Market Cap</div>
-                    <div class="table">Price</div>
-                    <div class="table" id="hi">Circulating Supply</div>
-                    <div class="table" id="hi">Volume (24h)</div>
-                    <div class="table" id="hi">24% Change</div>
-                </div>
-                <div class="tabledata">
-                    <div style="padding-left: 30px; " class="table">Name</div>
-                    <div class="table">Market Cap</div>
-                    <div class="table">Price</div>
-                    <div class="table" id="hi">Circulating Supply</div>
-                    <div class="table" id="hi">Volume (24h)</div>
-                    <div class="table" id="hi">24% Change</div>
-                </div>
-                <div class="tabledata">
-                    <div style="padding-left: 30px; " class="table">Name</div>
-                    <div class="table">Market Cap</div>
-                    <div class="table">Price</div>
-                    <div class="table" id="hi">Circulating Supply</div>
-                    <div class="table" id="hi">Volume (24h)</div>
-                    <div class="table" id="hi">24% Change</div>
+                <div class="ultimate">
+                    <div class="icon"><i class="fa fa-user-o" aria-hidden="true"></i>
+                    </div>
+                    <div id="not-ult">Ultimate Settings</div>
+                    <div id="not-ult1">your wallet must be secured. Bitcoin</div>
+                    <div id="not-ult2">makes it possible to transfer value any</div>
+                    <div id="not-ult3">where in a very easy way.</div>
                 </div>
             </div>
         </div>
-        <div class="maincontainer">
-            <hr class="hr">
-        </div>
-        <div class="container">
-            <div
-                class="team">
-                Our Team</div>
-            <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
-            <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
-        </div>
-        <div class="container">
-            <div class="line">
-                <div class="image"><img src="1.png" id="imagew1"  alt=""></div>
-                <div class="image"><img src="2.png" id="imagem1" alt=""></div>
-                <div class="image"><img src="1.png" id="imagew2" alt=""></div>
-                <div class="image"><img src="2.png" id="imagem2" alt=""></div>
+    </div>
+    <div class="maincontainer">
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div class="roadmap">
+            Road Map</div>
+        <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
+        <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
+    </div>
+    <div class="container">
+        <div style="margin-top: 40px; margin-bottom: 50px;">
+            <div class="bar"></div>
+            <div class="timeline">
+                <div class="entry" style="border: none;  color: black;">
+                    <h1 style="color: black;">September 2019</h1>
+                    <h5 style="color: black;">Siant Platform idea</h5>
+                </div>
+                <div class="entry" style="border: none; color: black;">
+                    <h1 style="color: black;">December 2019</h1>
+                    <h5 style="color: black;">Siant Platform idea</h5>
+                </div>
+
+                <div class="entry">
+                    <div id="road">
+                        <h1>January 2020</h1>
+                        <h2>Siant Platform idea</h2>
+                        <hr>
+                        <div id="now">Now</div>
+                    </div>
+                </div>
+                <div class="entry" style="border: none;  color: black;">
+                    <h1 style="color: black;">February 2020</h1>
+                    <h5 style="color: black;">Siant Platform idea</h5>
+                </div>
+                <div class="entry" style="border: none; color: black;">
+                    <h1 style="color: black;">March 2019</h1>
+                    <h5 style="color: black;">Siant Platform idea</h5>
+                </div>
+                <div class="entry" style="border: none; color: black;">
+                    <h1 style="color: black;">April 2020</h1>
+                    <h5 style="color: black;">Siant Platform idea</h5>
+                </div>
+
             </div>
         </div>
-        <div class="maincontainer">
-            <hr class="hr">
-        </div>
-        <div class="container">
-            <div class="first">
-                <div class="text1">
-                    <div id="inbus">Investment To The Future</div>
-                    <div id="inbus">Business Technology!</div>
-                    <div id="crypto">The use of crypto-currencies
-                        has become more widespread, and they are now</div>
-                    <div id="goods">increasingly accepted as a
-                        legitimate currency for transactions.</div>
-                    <div id="assets">Bitcoin is the first ever
-                        cryptocurrency and is used like other assets in exchange for</div>
-                    <div id="goods">goods and services.</div>
-                    <div id="crypto">Send, receive, and exchange
-                        Bitcoin, Ethereum, & Bitcoin Cash instantly with</div>
-                    <div id="goods">anyone in the world</div>
-                    <div><button class="analytic">Analytic Report</button></div>
-                </div>
-                <div>
-                    <img src="data.png" class="image2" alt="image">
-                </div>
+    </div>
+    <div class="maincontainer">
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div class="Cprices">
+            Currency Prices</div>
+        <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
+        <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
+    </div>
+    <div class="container">
+        <div class="maintable">
+            <div class="tabledata">
+                <div id="table" class="table">Name</div>
+                <div class="table">Market Cap</div>
+                <div class="table">Price</div>
+                <div class="table" id="hi">Circulating Supply</div>
+                <div class="table" id="hi">Volume (24h)</div>
+                <div class="table" id="hi">24% Change</div>
+            </div>
+            <div class="tabledata">
+                <div style="padding-left: 30px; " class="table">Name</div>
+                <div class="table">Market Cap</div>
+                <div class="table">Price</div>
+                <div class="table" id="hi">Circulating Supply</div>
+                <div class="table" id="hi">Volume (24h)</div>
+                <div class="table" id="hi">24% Change</div>
+            </div>
+            <div class="tabledata">
+                <div style="padding-left: 30px; " class="table">Name</div>
+                <div class="table">Market Cap</div>
+                <div class="table">Price</div>
+                <div class="table" id="hi">Circulating Supply</div>
+                <div class="table" id="hi">Volume (24h)</div>
+                <div class="table" id="hi">24% Change</div>
+            </div>
+            <div class="tabledata">
+                <div style="padding-left: 30px; " class="table">Name</div>
+                <div class="table">Market Cap</div>
+                <div class="table">Price</div>
+                <div class="table" id="hi">Circulating Supply</div>
+                <div class="table" id="hi">Volume (24h)</div>
+                <div class="table" id="hi">24% Change</div>
+            </div>
+            <div class="tabledata">
+                <div style="padding-left: 30px; " class="table">Name</div>
+                <div class="table">Market Cap</div>
+                <div class="table">Price</div>
+                <div class="table" id="hi">Circulating Supply</div>
+                <div class="table" id="hi">Volume (24h)</div>
+                <div class="table" id="hi">24% Change</div>
+            </div>
+            <div class="tabledata">
+                <div style="padding-left: 30px; " class="table">Name</div>
+                <div class="table">Market Cap</div>
+                <div class="table">Price</div>
+                <div class="table" id="hi">Circulating Supply</div>
+                <div class="table" id="hi">Volume (24h)</div>
+                <div class="table" id="hi">24% Change</div>
+            </div>
+            <div class="tabledata">
+                <div style="padding-left: 30px; " class="table">Name</div>
+                <div class="table">Market Cap</div>
+                <div class="table">Price</div>
+                <div class="table" id="hi">Circulating Supply</div>
+                <div class="table" id="hi">Volume (24h)</div>
+                <div class="table" id="hi">24% Change</div>
             </div>
         </div>
-        <div class="maincontainer">
-            <hr class="hr">
+    </div>
+    <div class="maincontainer">
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div class="team">
+            Our Team</div>
+        <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
+        <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
+    </div>
+    <div class="container">
+        <div class="line">
+            <div class="image"><img src="1.png" id="imagew1" alt=""></div>
+            <div class="image"><img src="2.png" id="imagem1" alt=""></div>
+            <div class="image"><img src="1.png" id="imagew2" alt=""></div>
+            <div class="image"><img src="2.png" id="imagem2" alt=""></div>
         </div>
-        <div class="container">
-            <div class="first">
-                <div class="text1">
-                    <div class="app">Everything You Need To</div>
-                    <div class="app">Showcase Your App.</div>
-                    <div style="font-size: 15px; font-weight: normal; margin-top: 20px;">The use of crypto-currencies
-                        has become more widespread, and they are now increasingly accepted as a</div>
-                    <div style="font-size: 15px; font-weight: normal; margin-top: 10px;">legitimate currency for
-                        transactions. Bitcoin is the first ever cryptocurrency and is used like other assets in</div>
-                    <div style="font-size: 13px; font-weight: normal; margin-top: 10px;"> exchange for goods and
-                        services.</div>
-                    <div style="font-size: 15px; font-weight: normal; margin-top: 20px;">Send,receive,and exchange
-                        Bitcoin,Ethereum,&Bitcoin Cash instantly with anyone in the world. Securely buy</div>
-                    <div style="font-size: 15px; font-weight: normal; margin-top: 10px;">and sell bitcoin alongside your
-                        already safely stored cryptocurrency.5</div>
-                    <div><img src="google1.png" alt="first" style="height: 70px; width: 150px; margin-top: 20px;">
-                        <img src="googleplay.png" alt="second" style="height: 60px; width: 150px;"></div>
-                </div>
-                <div>
-                    <img src="mobile.png" class="image3" alt="image">
-                </div>
+    </div>
+    <div class="maincontainer">
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div class="first">
+            <div class="text1">
+                <div id="inbus">Investment To The Future</div>
+                <div id="inbus">Business Technology!</div>
+                <div id="crypto">The use of crypto-currencies
+                    has become more widespread, and they are now</div>
+                <div id="goods">increasingly accepted as a
+                    legitimate currency for transactions.</div>
+                <div id="assets">Bitcoin is the first ever
+                    cryptocurrency and is used like other assets in exchange for</div>
+                <div id="goods">goods and services.</div>
+                <div id="crypto">Send, receive, and exchange
+                    Bitcoin, Ethereum, & Bitcoin Cash instantly with</div>
+                <div id="goods">anyone in the world</div>
+                <div><button class="analytic">Analytic Report</button></div>
             </div>
-        </div>
-        <div class="maincontainer">
-            <hr class="hr">
-        </div>
-        <div class="container">
             <div>
-                <div class="frequent">
-                    Frequently Asked Questions!</div>
-                <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
-                <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
+                <img src="data.png" class="image2" alt="image">
             </div>
         </div>
-        <div class="container">
-            <div class="first">
-                <div class="q1">
-                    <div style="color: white; font-size: 20px; padding: 5px 0px; font-weight: bold;">long fact that a
-                        reader will be distracted by the</div>
-                    <div style="color: white; font-size: 20px; padding: 0px 0px; font-weight: bold;">readable at its
-                        layout established?</div>
-                    <div style="color: white; font-size: 15px; padding-top: 20px; padding-left: 0px;">Send,receive,and
-                        exchange Bitcoin,Ethereum,& Bitcoin</div>
-                    <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">Cash instantly with
-                        anyone in the world.The use of crypto</div>
-                    <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">currencies has
-                        become more widespread.</div>
-                    <div
-                        style="color: white; font-size: 20px; padding-left: 0px; padding-top: 70px; font-weight: bold;">
-                        Established it is a long fact that a reader will be</div>
-                    <div style="color: white; font-size: 20px; padding: 5px 0px; font-weight: bold;">distracted by the
-                        readable at?</div>
-                    <div style="color: white; font-size: 15px; padding-top: 20px; padding-left: 0px;">Send,receive,and
-                        exchange Bitcoin,Ethereum,& Bitcoin</div>
-                    <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">Cash instantly with
-                        anyone in the world.The use of crypto</div>
-                    <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">currencies has
-                        become more widespread.</div>
-                </div>
-                <div class="q2">
-                    <div style="color: white; font-size: 20px; padding: 5px 0px; font-weight: bold;">Fact It is a long
-                        established that a reader will be</div>
-                    <div style="color: white; font-size: 20px; padding: 0px 0px; font-weight: bold;">distract by the
-                        read at its layout?</div>
-                    <div style="color: white; font-size: 15px; padding-top: 20px; padding-left: 0px;">Send,receive,and
-                        exchange Bitcoin,Ethereum,& Bitcoin</div>
-                    <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">Cash instantly with
-                        anyone in the world.The use of crypto</div>
-                    <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">currencies has
-                        become more widespread.</div>
-                    <div
-                        style="color: white; font-size: 20px; padding-left: 0px; padding-top: 70px; font-weight: bold;">
-                        Reader It is a long established fact that a will be</div>
-                    <div style="color: white; font-size: 20px; padding: 5px 0px; font-weight: bold;">distract by the
-                        read at its layout?</div>
-                    <div style="color: white; font-size: 15px; padding-top: 20px; padding-left: 0px;">Send,receive,and
-                        exchange Bitcoin,Ethereum,& Bitcoin</div>
-                    <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">Cash instantly with
-                        anyone in the world.The use of crypto</div>
-                    <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">currencies has
-                        become more widespread.</div>
-                </div>
+    </div>
+    <div class="maincontainer">
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div class="first">
+            <div class="text1">
+                <div class="app">Everything You Need To</div>
+                <div class="app">Showcase Your App.</div>
+                <div style="font-size: 15px; font-weight: normal; margin-top: 20px;">The use of crypto-currencies
+                    has become more widespread, and they are now increasingly accepted as a</div>
+                <div style="font-size: 15px; font-weight: normal; margin-top: 10px;">legitimate currency for
+                    transactions. Bitcoin is the first ever cryptocurrency and is used like other assets in</div>
+                <div style="font-size: 13px; font-weight: normal; margin-top: 10px;"> exchange for goods and
+                    services.</div>
+                <div style="font-size: 15px; font-weight: normal; margin-top: 20px;">Send,receive,and exchange
+                    Bitcoin,Ethereum,&Bitcoin Cash instantly with anyone in the world. Securely buy</div>
+                <div style="font-size: 15px; font-weight: normal; margin-top: 10px;">and sell bitcoin alongside your
+                    already safely stored cryptocurrency.5</div>
+                <div><img src="google1.png" alt="first" style="height: 70px; width: 150px; margin-top: 20px;">
+                    <img src="googleplay.png" alt="second" style="height: 60px; width: 150px;"></div>
+            </div>
+            <div>
+                <img src="mobile.png" class="image3" alt="image">
             </div>
         </div>
-        <div class="maincontainer">
-            <hr class="hr">
+    </div>
+    <div class="maincontainer">
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div>
+            <div class="frequent">
+                Frequently Asked Questions!</div>
+            <div class="content2">Send, receive, and exchnage Bitcoin, Ethereum, & Bitcoin Cash instantly</div>
+            <div class="content3"> with anyone in the world. Securely buy and sell bitcoin.</div>
         </div>
-        <div class="container">
-            <div class="ford">
-                <div><img src="ford.png" alt="" class="fordimg1"></div>
-                <div><img src="ford.png" alt="" class="fordimg"></div>
-                <div><img src="ford.png" alt="" class="fordimg"></div>
-                <div><img src="ford.png" alt="" class="fordimg"></div>
-                <div><img src="ford.png" alt="" class="fordimg"></div>
-                <div><img src="ford.png" alt="" class="fordimg"></div>
+    </div>
+    <div class="container">
+        <div class="first">
+            <div class="q1">
+                <div style="color: white; font-size: 20px; padding: 5px 0px; font-weight: bold;">long fact that a
+                    reader will be distracted by the</div>
+                <div style="color: white; font-size: 20px; padding: 0px 0px; font-weight: bold;">readable at its
+                    layout established?</div>
+                <div style="color: white; font-size: 15px; padding-top: 20px; padding-left: 0px;">Send,receive,and
+                    exchange Bitcoin,Ethereum,& Bitcoin</div>
+                <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">Cash instantly with
+                    anyone in the world.The use of crypto</div>
+                <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">currencies has
+                    become more widespread.</div>
+                <div style="color: white; font-size: 20px; padding-left: 0px; padding-top: 70px; font-weight: bold;">
+                    Established it is a long fact that a reader will be</div>
+                <div style="color: white; font-size: 20px; padding: 5px 0px; font-weight: bold;">distracted by the
+                    readable at?</div>
+                <div style="color: white; font-size: 15px; padding-top: 20px; padding-left: 0px;">Send,receive,and
+                    exchange Bitcoin,Ethereum,& Bitcoin</div>
+                <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">Cash instantly with
+                    anyone in the world.The use of crypto</div>
+                <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">currencies has
+                    become more widespread.</div>
+            </div>
+            <div class="q2">
+                <div style="color: white; font-size: 20px; padding: 5px 0px; font-weight: bold;">Fact It is a long
+                    established that a reader will be</div>
+                <div style="color: white; font-size: 20px; padding: 0px 0px; font-weight: bold;">distract by the
+                    read at its layout?</div>
+                <div style="color: white; font-size: 15px; padding-top: 20px; padding-left: 0px;">Send,receive,and
+                    exchange Bitcoin,Ethereum,& Bitcoin</div>
+                <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">Cash instantly with
+                    anyone in the world.The use of crypto</div>
+                <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">currencies has
+                    become more widespread.</div>
+                <div style="color: white; font-size: 20px; padding-left: 0px; padding-top: 70px; font-weight: bold;">
+                    Reader It is a long established fact that a will be</div>
+                <div style="color: white; font-size: 20px; padding: 5px 0px; font-weight: bold;">distract by the
+                    read at its layout?</div>
+                <div style="color: white; font-size: 15px; padding-top: 20px; padding-left: 0px;">Send,receive,and
+                    exchange Bitcoin,Ethereum,& Bitcoin</div>
+                <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">Cash instantly with
+                    anyone in the world.The use of crypto</div>
+                <div style="color: white; font-size: 15px; padding-top: 5px; padding-left: 0px;">currencies has
+                    become more widespread.</div>
             </div>
         </div>
-        <div style="background-color: rgb(30, 30, 83);">
+    </div>
+    <div class="maincontainer">
+        <hr class="hr">
+    </div>
+    <div class="container">
+        <div class="ford">
+            <div><img src="ford.png" alt="" class="fordimg1"></div>
+            <div><img src="ford.png" alt="" class="fordimg"></div>
+            <div><img src="ford.png" alt="" class="fordimg"></div>
+            <div><img src="ford.png" alt="" class="fordimg"></div>
+            <div><img src="ford.png" alt="" class="fordimg"></div>
+            <div><img src="ford.png" alt="" class="fordimg"></div>
+        </div>
+    </div>
+    <div style="background-color: rgb(30, 30, 83);">
         <div class="container">
             <div class="last">
                 <div id="lastdiv1"><img src="logo-light.png" style="padding: 10px 0px; height: 40px; width: 120px;">
-                    <div style="color: white; font-size: 14px; padding-top: 15px;">Send,receive,and exchange Bitcoinn,Ethereum,&</div>
-                    <div style="color: white; font-size: 14px; padding-top: 5px;">Bitcoin Cash nstantly with anyone in the world.</div>
-                    <div style="color: white; font-size: 14px; padding-top: 5px;">The use of crypto currencies has.</div>
+                    <div style="color: white; font-size: 14px; padding-top: 15px;">Send,receive,and exchange
+                        Bitcoinn,Ethereum,&</div>
+                    <div style="color: white; font-size: 14px; padding-top: 5px;">Bitcoin Cash nstantly with anyone in
+                        the world.</div>
+                    <div style="color: white; font-size: 14px; padding-top: 5px;">The use of crypto currencies has.
+                    </div>
                     <div></div>
                 </div>
                 <div id="lastdiv2">
@@ -1012,15 +1212,19 @@ margin-top: 90px;
                     <div style="color: white; padding: 5px 0px;">Contact Us</div>
                 </div>
                 <div id="lastdiv3">
-                    <div style="color: white; padding: 10px 0px; font-size: 25px; font-weight: bold;">Contact With Us</div>
-                    <div style="color: white; font-size: 14px; padding: 5px 0px;">Our support available to help you 24 hours a day</div>
+                    <div style="color: white; padding: 10px 0px; font-size: 25px; font-weight: bold;">Contact With Us
+                    </div>
+                    <div style="color: white; font-size: 14px; padding: 5px 0px;">Our support available to help you 24
+                        hours a day</div>
                     <div style="color: white; font-size: 14px; padding: 5px 0px;">& 7 days a week</div>
-                    <div style="color: white; font-size: 14px; padding: 10px 0px;">962 Fifth Avenue, 3rd Floor New York.</div>
+                    <div style="color: white; font-size: 14px; padding: 10px 0px;">962 Fifth Avenue, 3rd Floor New York.
+                    </div>
                     <div style="color: white; font-size: 14px; padding: 10px 0px;">Hello@AlexaTheme.net</div>
                     <div style="color: white; font-size: 14px; padding: 10px 0px;">(+123)456 789 101</div>
                 </div>
                 <div id="lastdiv4">
-                    <div style="color: white; font-size: 25px; font-weight: bold; padding: 10px 0px; ">Related Links</div>
+                    <div style="color: white; font-size: 25px; font-weight: bold; padding: 10px 0px; ">Related Links
+                    </div>
                     <div style="color: white; font-size: 14px; padding: 10px 0px;">What is ICO</div>
                     <div style="color: white; font-size: 14px; padding: 10px 0px;">Services</div>
                     <div style="color: white; font-size: 14px; padding: 10px 0px;">Prices</div>
@@ -1028,14 +1232,15 @@ margin-top: 90px;
                     <div style="color: white; font-size: 14px; padding: 10px 0px;">Our Team</div>
                 </div>
             </div>
-        </div>
-    
-        <div class="maincontainer">
-            <hr class="hr">
-            <div class="lasttext">2020jdkdhfdjgndvdm cryptol nvfmgfd</div>
+
+
+            <div class="maincontainer">
+                <hr class="hr">
+                <div class="lasttext">2020jdkdhfdjgndvdm cryptol nvfmgfd</div>
+            </div>
         </div>
     </div>
-    </div>
+
 </body>
 
 </html>
