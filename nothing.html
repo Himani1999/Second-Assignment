@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100%;
+            background-color: yellow;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 400px;
+            align-items: center;
+        }
+        .container .item{
+            flex-basis: 400px;
+            height: 300px;
+            background-color: darkred;
+            border: 1px dotted green;
+        }
+
+        #item1{
+            flex-basis: 1;
+        }
+        #item2{
+            flex-basis: 2;
+        } 
+        #item3{
+            flex-basis: 8;
+        } 
+        #item4{
+            flex-basis: 4;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item" id="Item1"></div>
+        <div class="item" id="Item2"></div>
+        <div class="item" id="Item3"></div>
+        <div class="item" id="Item4"></div>
+    </div>
+</body>
+</html>
